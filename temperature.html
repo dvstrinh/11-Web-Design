@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization Dashboard (Latitude)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ffffff">
+        <a href="index.html" class="btn btn-default btn-lg"><strong>Latitude</strong></a>
+
+        <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plot</a>
+                    <div class="dropdown-menu menu-custom" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">vs. Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">vs. Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">vs. Cloudiness</a>
+                        <a class="dropdown-item" href="wind.html">vs. Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row d-block">
+            <div class="col-md-12 col-lg-7 float-left vis-col">
+                <h2><strong>Max Temperature</strong></h2>
+                <hr />
+                <div class="row d-block">
+                    <div class="col-md-12 col-lg-12 text-center">
+                        <img class="img-fluid visualization-img" src="Resources/assets/images/Fig1.png"
+                            alt="Temperature">
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                        <p class="text-center">
+                            As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg.
+                            Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be
+                            warmer this time of year than the northern hemisphere. This may be due to the tilt of the
+                            Earth at the time of the year this data was gathered.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-12 col-lg-auto spacer float-left"></div>
+            <div class="col-md-12 col-lg-4 align-self-center float-left vis-col">
+                <h3 class="text-center"><strong>Visualizations</strong></h3>
+                <hr />
+                <div class="row media">
+                    <div class="col-6 col-md-3 col-lg-6">
+                        <a href="temperature.html">
+                            <img class="img-fluid img-link visualization-thumbnail"
+                                src="Resources/assets/images/Fig1.png" alt="Temperature">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-6">
+                        <a href="humidity.html">
+                            <img class="img-fluid img-link visualization-thumbnail"
+                                src="Resources/assets/images/Fig2.png" alt="Humidity">
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-3 col-lg-6">
+                        <a href="cloudiness.html">
+                            <img class="img-fluid img-link visualization-thumbnail"
+                                src="Resources/assets/images/Fig3.png" alt="Cloudiness">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-6">
+                        <a href="wind.html">
+                            <img class="img-fluid img-link visualization-thumbnail"
+                                src="Resources/assets/images/Fig4.png" alt="Wind Speed">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footer mt-auto">
+    <navbar>
+        <p class="text-center">
+            <a href="https://github.com/dvstrinh/11-Web-Design">
+                <img class='github-logo img-fluid' src="Resources/assets/images/GitHub-Mark-32px-custom.png"
+                    alt="GitHub-Mark">
+            </a>
+        </p>
+    </navbar>
+</footer>
+
+
+
+</html>
